@@ -9,3 +9,4 @@ mv kubectl /bin/
 chmod +x ./kind
 mv kind /bin/
 kind create cluster --config kind-example-config.yaml
+kubectl get nodes
