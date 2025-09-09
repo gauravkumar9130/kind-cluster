@@ -1,0 +1,7 @@
+#kubectl run abcd --image=quay.io/gauravkumar9130/nginx
+#kubectl expose pod/abcd --type=NodePort --target-port=80 --port=80
+#kubectl get svc
+Check nodeport port number
+#docker inspect kind-control-plane
+Find ip address of container
+#curl 172.18.0.3:30534
