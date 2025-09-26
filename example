@@ -5,3 +5,11 @@ Check nodeport port number
 #docker inspect kind-control-plane
 Find ip address of container
 #curl 172.18.0.3:30534
+
+OR
+
+If wants to allow access outside machine (Please make sure if using Azure the need to enable port in network security group and add in firewall #firewall-cmd --permanent --add-port=8081/tcp 
+#firewall-cmd --reload)
+
+
+#kubectl port-forward --address 0.0.0.0 svc/abcd 8081:80
